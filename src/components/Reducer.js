@@ -5,12 +5,7 @@ export const getInitialFormValues = () => ({
     phoneNumber : []
 })
 
-const getInitialAppState = () => {
-    return {
-      form: getInitialFormValues(),
-      records: []
-    };
-  };
+
 
 export const TAB_IDS = {
     'ADD_USER': 'add',

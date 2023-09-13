@@ -23,13 +23,6 @@ const validationSchema = Yup.object().shape({
     .required('phoneNumber is required')),
 });
 
-const handleSubmit = () => {
-  Swal.fire(
-    'Deleted!',
-    'Your file has been deleted.',
-    'success'
-  )
-}
 
 const KErrorMessage = ({ name }) => {
   return (
