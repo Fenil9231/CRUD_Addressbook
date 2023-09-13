@@ -1,0 +1,194 @@
+/* user.css */
+body{
+    padding: 7%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* margin: ; */
+  }
+  
+  /* Style for the User component */
+  .user-container {
+    width: 85%;
+    max-width: 90%;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+  }
+/* Style for the "Refresh" button */
+.refresh-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-bottom: 20px ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  table{
+    border: 2px solid black;
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 91%;
+    
+  }
+  /* Style for the table header */
+   thead th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Style for the table rows */
+   tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    height: 100px;
+  }
+  tbody tr:nth-child(odd){
+    height: 100px;
+  }
+
+  /* .number{
+    border-bo: ;
+  } */
+  
+  /* Style for the "Delete" button */
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;    
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* user.css */
+
+/* Center the form container */
+.user-container {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the form */
+form {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  font-family: Arial, sans-serif;
+  position:static;
+  margin-left: 25px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button[type="button"] {
+  margin-left: 10px ;
+  color: white;
+  border: 1px solid black;
+  height: 28px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold ;
+}
+
+button[type="button"]:hover {
+  background-color: black;
+}
+
+button[type="submit"] {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+}
+
+
+
+/* FieldArray buttons style */
+button[type="button"][data-reject] {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button[type="button"][data-reject]:hover {
+  background-color: #d32f2f;
+}
+
+button[type="button"][data-accept] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type="text"].phone-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin to create space */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button[type="button"][data-accept]:hover {
+  background-color: #45a049;
+}
+
+
+.edittextbox{
+  position: static;
+  width: 200px;
+}
+
+.editableform{
+  margin-top: 20px;
+}
