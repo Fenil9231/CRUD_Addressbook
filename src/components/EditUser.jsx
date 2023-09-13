@@ -5,10 +5,6 @@ import "./user.css";
 import { Button } from "react-bootstrap";
 
 
-// import { Formik } from 'formik';
-// import { Button, Spinner } from 'react-bootstrap';
-// import { isDisabled } from "@testing-library/user-event/dist/utils";
-
 export const EditUser = () => {
     const [id, setId] = useState("");
     const [user,setUser] = useState({})

@@ -2,13 +2,9 @@ import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import {EditUser} from './EditUser';
 import User from './User';
-// import './style.css';
 import { TABS, TAB_IDS } from './Reducer';
 import { AddUser } from './AddUser';
 import Home from './Home';
-// import UserForm from './UserForm';
-// import NotFound from '../../components/NotFound';
-// import {Login} from "./login"
 
 
 export const Community = () => {

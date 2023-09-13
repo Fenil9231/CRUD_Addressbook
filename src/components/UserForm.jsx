@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import { ErrorMessage } from 'formik';
 import "./user.css";
 import Button from 'react-bootstrap/Button';
-import Swal from "sweetalert2";
 
 
 // const url="https://users-acontext-api.onrender.com/users";
@@ -23,13 +22,6 @@ const validationSchema = Yup.object().shape({
     .required('phoneNumber is required')),
 });
 
-const handleSubmit = () => {
-  Swal.fire(
-    'Deleted!',
-    'Your file has been deleted.',
-    'success'
-  )
-}
 
 const KErrorMessage = ({ name }) => {
   return (

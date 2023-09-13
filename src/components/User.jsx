@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-// import { Button } from "../../Buttons/button";
 import "./user.css";
 import { BASEURL } from "../services/api";
 
 const User = () => {
   const [users, setUsers] = useState([]);
-  const [userIdToDelete, setUserIdToDelete] = useState(null);
-  const [error, setError] = useState('')
-  console.log(users);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -16,31 +15,23 @@ const User = () => {
   const fetchData = async () => {
     try {
       const response = await fetch(`${BASEURL}/users`);
-      
+
       if (!response.ok) {
-         setError(`Error ${response.status}: ${response.statusText}`) 
+        throw new Error(`Error ${response.status}: ${response.statusText}`);
       }
-  
+
       const data = await response.json();
       setUsers(data);
+      setLoading(false);
+      setError("");
     } catch (e) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Something went wrong!',
-        footer: `${e.message} ${error} Please Try Again After Some Time ...`
-      });
+      setError(e.message);
+      setLoading(false);
       console.error(e);
     }
   };
-  
-  if(!users){
-    return <div>Loading...</div>;
-  }
 
   const handleDelete = (id) => {
-    setUserIdToDelete(id);
-
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -58,14 +49,21 @@ const User = () => {
           .then((res) => res.json())
           .then(() => {
             fetchData();
-            setUserIdToDelete(null);
             Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          })
+          .catch((error) => {
+            console.error(error);
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!",
+              footer: `Please Try Again After Some Time ...`,
+            });
           });
-      } else {
-        setUserIdToDelete(null);
       }
     });
   };
+
   return (
     <div className="container">
       <div className="user-container">
@@ -78,6 +76,11 @@ const User = () => {
             </div>
           </div>
         </div>
+        {loading ? (
+          <div>Loading...</div>
+        ) : error ? (
+          <div>Error: {error}</div>
+        ) : (
         <div className="container mt-4">
           <table className="table table-striped table-bordered">
             <thead className="thead-dark">
@@ -117,6 +120,7 @@ const User = () => {
             </tbody>
           </table>
         </div>
+      )}
       </div>
     </div>
   );
