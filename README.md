@@ -81,6 +81,25 @@ To run this project locally, follow these steps:
 - Follow the on-screen instructions for each operation.
 - Enjoy managing your resume with ease!
 
+## Contributing
+Contributions to this project are welcome. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature:
+    ```bash
+    git checkout -b feature/new-feature
+
+3. Commit your changes:
+    ```bash
+    git commit -m "Add new feature"
+
+4. Push your branch to your fork:
+    ```bash
+    git push origin feature/new-feature
+
+5. Open a pull request to the main repository.
+
 
 ## Contact
 If you have questions or feedback, feel free to reach out:
