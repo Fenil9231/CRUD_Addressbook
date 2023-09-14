@@ -81,8 +81,6 @@ To run this project locally, follow these steps:
 - Follow the on-screen instructions for each operation.
 - Enjoy managing your resume with ease!
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
 If you have questions or feedback, feel free to reach out:
