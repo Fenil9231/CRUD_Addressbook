@@ -10,16 +10,16 @@ import Button from 'react-bootstrap/Button';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
-    .required('please enter your name'),
+    .required('Name Is Required !'),
   email: Yup.string()
     .email('Invalid email format')
-    .required('Required'),
+    .required('Email Is Required !'),
   city: Yup.string()
-    .required('Required!'),
+    .required('City Is Required !'),
   phoneNumber: Yup.array().of(Yup.string()
-     .min(10, 'phnNumber must be at least 10 characters')
-    .max(11 , "phoneNumber so longer, please enter 10 char")
-    .required('phoneNumber is required')),
+     .min(10, 'Phone Number must be at least 10 characters')
+    .max(11 , "Phone Number so longer, please enter 10 char")
+    .required('Phone Number Is Required !')),
 });
 
 

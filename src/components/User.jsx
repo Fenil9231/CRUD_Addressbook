@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import "./user.css";
 import { BASEURL } from "../services/api";
+import {  ScaleLoader } from "react-spinners";
 
 const User = () => {
   const [users, setUsers] = useState([]);
@@ -77,7 +78,14 @@ const User = () => {
           </div>
         </div>
         {loading ? (
-          <div>Loading...</div>
+          <div><ScaleLoader
+          color="#007bff"
+          height={40}
+          margin={3}
+          radius={20}
+          speedMultiplier={1.1}
+          width={6}
+        /></div>
         ) : error ? (
           <div>Error: {error}</div>
         ) : (
