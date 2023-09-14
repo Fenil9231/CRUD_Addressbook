@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Addressbook Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web-based application for managing and displaying resumes. It includes features for adding, editing, and viewing user detail. Below, you'll find details about the project's structure and functionality.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Addressbook Project is a web application designed to help users manage and showcase their details. It includes the following components:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **UserForm Component**: This component provides a form for adding and editing resume information, including name, email, city, and a dynamic array of phone numbers.
 
-### `npm test`
+- **User Component**: This component fetches user data from an API and displays it in a table. Users can also delete entries from the table.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **EditUser Component**: This component allows users to edit existing data entries. Users can search for a specific data by ID, update its details, and save the changes.
 
-### `npm run build`
+- **Community Component**: This component serves as the main navigation hub for the application, offering links to various tabs, including Add User, Edit User, View User, and Home.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **AddUser Component**: Users can add new data entries through this component. It utilizes the UserForm component for data input and submission.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Key features and functionalities of the AddressBook Project include:
 
-### `npm run eject`
+- Adding and editing user information.
+- Viewing a list of user data in a table format.
+- Deleting user entries from the table.
+- Navigation between different tabs for managing data.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is built using the following technologies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React (React 18)
+- React Router (react-router-dom)
+- Formik for form handling
+- Yup for validation
+- Bootstrap for styling
+- Fetch API for making HTTP requests
+- Node.js(backend)
+- JSON (backend,data store)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+To run this project locally, follow these steps:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone https://github.com/Fenil9231/CRUD_Addressbook.git
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Navigate to the project directory:
+   ```bash
+   cd resume-management
 
-### Analyzing the Bundle Size
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the application:
+   ```bash
+   npm start
+5. Access the application in your web browser at http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
+- Visit the application in your web browser.
+- Use the navigation tabs to add, edit, and view user resumes.
+- Follow the on-screen instructions for each operation.
+- Enjoy managing your resume with ease!
 
-### Making a Progressive Web App
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
+If you have questions or feedback, feel free to reach out:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: https://github.com/Fenil9231
+LinkedIn: https://www.linkedin.com/in/fenil-kothiya-45327a270/
+Email: fenil.kothiya88@gmail.com
