@@ -88,6 +88,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 If you have questions or feedback, feel free to reach out:
 
-GitHub: https://github.com/Fenil9231
-LinkedIn: https://www.linkedin.com/in/fenil-kothiya-45327a270/
-Email: fenil.kothiya88@gmail.com
+- GitHub: https://github.com/Fenil9231
+- LinkedIn: https://www.linkedin.com/in/fenil-kothiya-45327a270/
+- Email: fenil.kothiya88@gmail.com
