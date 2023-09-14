@@ -2,6 +2,9 @@
 
 This project is a web-based application for managing and displaying resumes. It includes features for adding, editing, and viewing user detail. Below, you'll find details about the project's structure and functionality.
 
+# Demo Link
+https://strong-brigadeiros-9ee413.netlify.app/
+
 ## Table of Contents
 
 - [Overview](#overview)
